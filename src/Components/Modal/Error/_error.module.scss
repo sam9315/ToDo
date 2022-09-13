@@ -1,0 +1,12 @@
+@import "../../../index.module.scss";
+
+.error {
+  width: 100%;
+  padding: 0.25rem 0;
+  text-align: center;
+
+  & p {
+    font-size: 1rem;
+    color: $LightRed;
+  }
+}

@@ -1,0 +1,94 @@
+@import "../../index.module.scss";
+
+.main {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: 1000px) {
+    height: fit-content;
+    margin-top: 2rem;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-areas:
+    "a b c d"
+    " a e f g";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 3rem;
+  align-items: flex-start;
+  margin: 0 auto;
+  min-height: 26rem;
+
+  @media (max-width: 1000px) {
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "a b c "
+      "a d e "
+      "a f g";
+  }
+
+  @media (max-width: 680px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+  }
+}
+.a {
+  grid-area: a;
+
+  @media (max-width: 680px) {
+    max-width: 18rem;
+    width: 18rem;
+  }
+}
+.b {
+  grid-area: b;
+
+  @media (max-width: 680px) {
+    width: 18rem;
+    max-width: 18rem;
+  }
+}
+.c {
+  grid-area: c;
+  @media (max-width: 680px) {
+    width: 18rem;
+    max-width: 18rem;
+  }
+}
+.d {
+  grid-area: d;
+  @media (max-width: 680px) {
+    width: 18rem;
+    max-width: 18rem;
+  }
+}
+.e {
+  grid-area: e;
+  @media (max-width: 680px) {
+    width: 18rem;
+    max-width: 18rem;
+  }
+}
+.f {
+  grid-row: f;
+  @media (max-width: 680px) {
+    width: 18rem;
+    max-width: 18rem;
+  }
+}
+
+.g {
+  grid-row: g;
+  @media (max-width: 680px) {
+    width: 18rem;
+    max-width: 18rem;
+  }
+}

@@ -1,0 +1,46 @@
+@import "../../../index.module.scss";
+
+.file {
+  margin: 2rem 0;
+}
+
+.button {
+  width: 8.5rem;
+  height: 8.5rem;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.imagePreview {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #c499ba;
+  position: relative;
+
+  & p {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    color: $LimeGreen;
+  }
+
+  & img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+
+    &:hover {
+      filter: blur(1px);
+    }
+  }
+}

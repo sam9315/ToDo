@@ -1,0 +1,123 @@
+@import "../../../index.module.scss";
+
+.activity {
+  max-width: 13rem;
+}
+
+.top {
+  min-height: 3rem;
+  background-color: $LightOrange;
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.bottom {
+  background-color: $DarkBlue;
+  padding: 1.5rem;
+  min-height: 5rem;
+  border-radius: 10px;
+  position: relative;
+  z-index: 2;
+  margin-top: -1.8rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  &:hover {
+    background-color: $DarkBlue + 10%;
+  }
+
+  &_top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    & h2 {
+      color: $AlmostWhite + 20%;
+    }
+  }
+
+  &_bottom {
+    & h1 {
+      font-size: 2.5rem;
+      font-weight: 400;
+      color: $AlmostWhite;
+    }
+
+    & p {
+      font-size: 0.8rem;
+      color: $UnsaturatedBlue;
+    }
+  }
+}
+
+.div_img {
+  //   width: 2.5rem;
+  height: 4rem;
+  text-align: right;
+  overflow: hidden;
+  padding-right: 0.5rem;
+  & img {
+    height: 100%;
+    margin-top: -7px;
+  }
+}
+
+.img_div {
+  cursor: pointer;
+  position: relative;
+}
+
+.dropBar {
+  position: absolute;
+  top: 0.8rem;
+  right: -5px;
+  min-width: 5rem;
+  // background-color: #aedbce;
+  background-color: #4d4c7d;
+  border-radius: 10px;
+  padding: 0.5rem;
+
+  &_list {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    cursor: context-menu;
+    & li {
+      font-size: 1rem;
+      cursor: pointer;
+      width: fit-content;
+      // color: #4b5d67;
+      color: #f6fbf4;
+
+      &:hover {
+        color: #827397;
+      }
+    }
+  }
+}
+.link {
+  text-decoration: none;
+  font-size: 1rem;
+  cursor: pointer;
+  width: fit-content;
+  // color: #4b5d67;
+  color: #f6fbf4;
+
+  &:hover {
+    color: #827397;
+  }
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+.active {
+  display: inline;
+  visibility: visible;
+}

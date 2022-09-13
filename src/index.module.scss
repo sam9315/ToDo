@@ -1,0 +1,35 @@
+$AlmostWhite: hsl(0, 0%, 98%);
+$MediumGray: hsl(0, 0%, 41%);
+$AlmostBlack: hsl(0, 0%, 8%);
+$Blue: hsl(246, 80%, 60%);
+$LightOrange: hsl(15, 100%, 70%);
+$SoftBlue: hsl(195, 74%, 62%);
+$LightRed: hsl(348, 100%, 68%);
+$LimeGreen: hsl(145, 58%, 55%);
+$Violet: hsl(264, 64%, 52%);
+$SoftOrange: hsl(43, 84%, 65%);
+$VeryDarkBlue: hsl(226, 43%, 10%);
+$DarkBlue: hsl(235, 46%, 20%);
+$UnsaturatedBlue: hsl(235, 45%, 61%);
+$PaleBlue: hsl(236, 100%, 87%);
+$DenaturedBlue: hsl(235, 45%, 61%);
+$PaleBlue: hsl(236, 100%, 87%);
+:root body {
+  font-family: "Rubik", sans-serif;
+  font-size: 62.5%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: $VeryDarkBlue;
+
+  @media (max-width: 380px) {
+    font-size: 50%;
+    min-width: 18rem;
+  }
+}
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
