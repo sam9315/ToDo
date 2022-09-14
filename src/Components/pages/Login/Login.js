@@ -46,7 +46,7 @@ const Login = () => {
       dispatch(AuthActions.loading(true));
       const inputUserEmail = inputEmail.current.value;
       const inputUserPassword = inputPassword.current.value;
-      const response = await fetch("http://localhost:8080/login", {
+      const response = await fetch("https://react-timer-app-backend.herokuapp.com/login", {
         method: "POST",
         body: JSON.stringify({
           email: inputUserEmail,
@@ -79,7 +79,7 @@ const Login = () => {
         })
       );
       // console.log(resData);
-      const image = "http://localhost:8080/" + resData.imageUrl;
+      const image = "https://react-timer-app-backend.herokuapp.com/" + resData.imageUrl;
       // console.log(image);
       dispatch(
         UserActions.replaceUser({
