@@ -26,7 +26,7 @@ const Activity = (props) => {
       history.push("/login");
     }
     const response = await fetch(
-      `http://localhost:8080/activity/delete/${activityId}`,
+      `https://react-timer-app-backend.herokuapp.com/activity/delete/${activityId}`,
       {
         method: "DELETE",
         headers: {
